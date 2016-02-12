@@ -1,0 +1,6 @@
+February 11th, 2016:
+Yesterday I confirmed with Dr. Chappell that using Unity is a viable option as we will be able to display and execute testing and game code in class.
+With that, I created a base 2D Unity project and committed it to the repository that I made last week. It took me only 5 minutes or so; I already set up the
+repo and had a Unity account in place.
+After that I spent about 20 minutes writing out a few User Stories and assigning them respective difficulties. The hope is that we'll be able to extract
+all the requirements we need from these.
