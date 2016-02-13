@@ -4,3 +4,7 @@ With that, I created a base 2D Unity project and committed it to the repository 
 repo and had a Unity account in place.
 After that I spent about 20 minutes writing out a few User Stories and assigning them respective difficulties. The hope is that we'll be able to extract
 all the requirements we need from these.
+
+February 12th, 2016:
+Today we presented in class a few of our user stories and the basic overview of our project so far. I added a few more user stories after hearing proposed
+features from other groups that I like but didn't think of myself.

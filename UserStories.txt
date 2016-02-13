@@ -1,19 +1,27 @@
+As a player of James and Jay's Battleship program...
+
 User Story 1:
-As a player of Battleship, I can start a new game with another player and place my ships where I wish on the grid.
-Difficulty [1 - 10]: 7
+I can start a new game with another player and place my ships where I wish on the grid.
+Difficulty [1 - 10]: 9
 
 User Story 2:
-As a player of Battleship, I can start a new game with the computer and play until the game is completed.
-Difficulty [1 - 10]: 10
+I can start a new game with the computer and play until the game is completed.
+Difficulty [1 - 10]: 6-10
 
 User Stroy 3:
-As a player of Battleship, I can specify which square on my opponent's grid I would like to "fire a shot at".
+I can specify which square on my opponent's grid I would like to "fire a shot at".
 Difficulty [1 - 10]: 4
 
 User Story 4:
-As a player of Battleship, I can view which squares on my opponent's grid I have guessed in the current game and see whether they were a hit or a miss.
+I can view which squares on my opponent's grid I have guessed in the current game and see whether they were a hit or a miss.
 Difficulty [1 - 10]: 3
 
 User Story 5:
-As a player of Battleship, I can see which squares the opponent has guessed on my grid.
+I can see which squares the opponent has guessed on my grid.
 Difficulty [1 - 10]: 3
+
+User Story 6:
+I can ensure my human opponent cannot cheat by choosing to require pins before grids can be viewed.
+Difficulty [1 - 10]: 2
+
+
