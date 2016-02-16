@@ -8,3 +8,13 @@ all the requirements we need from these.
 February 12th, 2016:
 Today we presented in class a few of our user stories and the basic overview of our project so far. I added a few more user stories after hearing proposed
 features from other groups that I like but didn't think of myself.
+
+February 15th, 2016:
+James and I met up in Arctic Java today with the intent of talking over and writing up our requirements document and our design document. We finished both
+these goals after about an hour of me being there. We derived most of our requirements from the user stories we came up with last week. Those were very 
+helpful in making sure we covered all the bases in our requirements. There was a bit more "winging it" with the design document. We just wrote out the flow
+of play broken up into scenes and each scene's components. After covering the intended look of the game, we moved on to what we felt would be best under the
+hood. We talked over what classes we should have, what members each class would need to include and what role each of these would play in the overall game.
+With the design document all hashed out, we have a very clear direction in which to proceed in beginning to write the code. So far, I am very pleased with the
+software development process as described in class. No complaints.
+We also spent a few minutes of me showing James a few small things in Unity that I've picked up, just so we can be mostly on the same page in that department.
