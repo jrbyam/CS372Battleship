@@ -1,0 +1,12 @@
+Requirements.txt
+Here lie the requirements of the CS 372 Battleship Project as decided by James Lang and Jay Byam.
+
+1. The software must allow at least one human to successfully play a game of Battleship, per the usual rules of the game.
+2. There must be a single winner at the end of any given game.
+3. The software must run on a mobile device.
+4. Players must be able to place their ships using touch input on the mobile device.
+5. Players must be able to specify which grid square they wish to "fire at".
+6. Players must be able to see which grid squares they have "fired at" and whether they were hits or not.
+7. Players must put in their username and pin before starting a game.
+8. If a player doesn't already have a "account", they must create one with a new pin in order to play.
+9. Players must be able to view the "All Time Winners" list.

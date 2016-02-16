@@ -1,0 +1,42 @@
+Design.txt
+This is the basic design outline for the Battleship program to be created by James Lang and Jay Byam.
+
+Outside World Sees:
+Main Menu:
+- Title logo
+- Play button - leads to "Decide Players" scene
+- Battleship-ish background
+
+Decide Players Scene:
+- Two options (buttons) - lead to "Player Setup" scene
+  - One player (against computer) 
+  - Two players (against each other)
+
+Player Setup Scene:
+- Defaults of "Player 1/2" and no pin
+- If custom username is entered, pin must be provided
+- Continue button - leads to "Game" scene
+
+Game Scene:
+- Two grids
+  - "My" grid (smaller)
+    - Shows ships (as placed by "me")
+    - Shows "their" attempted shots (hits and misses)
+    - Indicates for each ship if it is sunk (hit on all grid squares it takes up)
+  - "Their" grid (bigger)
+    - Shows "my" attempted shots (hits and misses)
+    - Shows sunk ships (revealing what type they were)
+
+Outside World Doesn't See:
+- Ship class
+  - int size (how many grid squares it will take up when placed)
+  - List<GridSquare> gridSquares (which grid squares it takes up when placed)
+  - bool sunk (set to true when all GridSquare's in gridSquares are hit)
+- GridSquare class
+  - int row
+  - int column
+  - bool hit (whether or not it's been fired at)
+  - bool occupied (whether or not it has a ship on it)
+- Game class
+  - List<Ship> player1Ships
+  - List<Ship> player2Ships
