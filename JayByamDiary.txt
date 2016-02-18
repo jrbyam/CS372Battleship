@@ -18,3 +18,8 @@ hood. We talked over what classes we should have, what members each class would 
 With the design document all hashed out, we have a very clear direction in which to proceed in beginning to write the code. So far, I am very pleased with the
 software development process as described in class. No complaints.
 We also spent a few minutes of me showing James a few small things in Unity that I've picked up, just so we can be mostly on the same page in that department.
+
+February 17th, 2016:
+Today in class we did pair programming! We didn't really get very far, not having much time, so I haven't yet formed an opinion on PP. We did figure out which
+of our requirements we'd like to achieve with TDD, and we are going to meet on Friday to continue pair prgramming. I should be able to form an opinion of PP by
+then.

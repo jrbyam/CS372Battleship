@@ -10,3 +10,4 @@ Here lie the requirements of the CS 372 Battleship Project as decided by James L
 7. Players must put in their username and pin before starting a game.
 8. If a player doesn't already have a "account", they must create one with a new pin in order to play.
 9. Players must be able to view the "All Time Winners" list.
+10. Ships should show as sunk if all GridSquare's are hit.
