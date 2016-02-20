@@ -16,3 +16,4 @@
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/NSubstitute.dll
+/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/nsubstitute.dll

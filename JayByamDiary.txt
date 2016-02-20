@@ -23,3 +23,8 @@ February 17th, 2016:
 Today in class we did pair programming! We didn't really get very far, not having much time, so I haven't yet formed an opinion on PP. We did figure out which
 of our requirements we'd like to achieve with TDD, and we are going to meet on Friday to continue pair prgramming. I should be able to form an opinion of PP by
 then.
+
+February 19th, 2016:
+James and I spent an hour or so today trying to finish what we started on Wednesday. We could not get NSubstitute, our unit testing framework, to work 
+properly. The documentation did not seem to match up with the functionality of the framework. I am going to spend some time this weekend trying to get some 
+tests written and implemented, whether that means using NSubstitute or not.

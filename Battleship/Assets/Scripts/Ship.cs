@@ -16,7 +16,7 @@ public class Ship : MonoBehaviour {
 	public Ship( int shipSize )
 	{
 		size = shipSize;
-
+		gridSquares = new List<GridSquare> ();
 	}
 	
 	// Update is called once per frame
