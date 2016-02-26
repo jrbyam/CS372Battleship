@@ -1,28 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GridSquare : MonoBehaviour {
+public class GridSquare {
 
 	public int row;
 	public int column;
-	public bool hit;
+	public bool hit = false;
 	public bool occupied;
 
-	// Use this for initialization
-	void Start () {
-	
+	public GridSquare() {
+		row = 0;
+		column = 0;
+		occupied = false;
 	}
 
-	public GridSquare( int row, int column )
-	{
-
+	public GridSquare(int row, int column) {
 		this.row = row;
-
 		this.column = column;
-		
 	}
-	// Update is called once per frame
-	void Update () {
-	
+
+	public bool isPlacedLegally () {
+		if (row < 1 || row > 10 || column < 1 || column > 10) return false;
+		return true;
 	}
 }

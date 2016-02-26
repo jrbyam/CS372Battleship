@@ -28,3 +28,17 @@ February 19th, 2016:
 James and I spent an hour or so today trying to finish what we started on Wednesday. We could not get NSubstitute, our unit testing framework, to work 
 properly. The documentation did not seem to match up with the functionality of the framework. I am going to spend some time this weekend trying to get some 
 tests written and implemented, whether that means using NSubstitute or not.
+
+February 23rd, 2016:
+I have spent several hours this evening trying to figure out the unit testing framework in Unity. The documentation is simply not lining up with what I see.
+It's extremely frustrating. All the documentation is based on an older version of Unity and is largely obselete. I keep getting an error,
+MissingMethodException, that according to MANY forums is due to magical DLL issues. The only solutions offered were of the type "I tried this random thing and
+it worked so maybe this will help". I eventually got tired of this and switched over to using the integration testing system instead. I successfully wrote and
+got one test to fail, then getting it to pass. So far, I'm very annoyed with TDD. I'm doing it because it's part of this assignment. Otherwise, I would NEVER
+spend this much time on something with (in my opinion) almost no actual benefit. 
+I'm just a little upset.
+
+February 24th, 2016:
+Today, I decided to try the unit testing system again. It's just so promisingly simple according to the documentation. So, for a few minutes before class, the
+entire pair programming session and about 3 hours this evening I have been trying to find a way around the mysterious MissingMethodException. I'm done trying.
+I got the tests back to where they were last night using the integration testing system. This is going to have to be good enough.

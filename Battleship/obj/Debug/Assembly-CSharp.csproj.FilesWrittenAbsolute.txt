@@ -7,6 +7,9 @@
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/UnityEngine.UI.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/UnityEngine.Networking.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.dll
+/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Unity.SerializationLogic.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Unity.DataContract.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/ICSharpCode.NRefactory.dll
@@ -14,8 +17,4 @@
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.Pdb.dll
-/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/NSubstitute.dll
-/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/nsubstitute.dll
-/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
-/Users/jrbyam/Documents/CS372Battleship/Battleship/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb

@@ -47,7 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ButtonController.cs" />
      <Compile Include="Assets\Scripts\GridSquare.cs" />
-     <Compile Include="Assets\Scripts\Ship.cs" />
+     <Compile Include="Assets\Scripts\GridSquareUnitTests.cs" />
+     <Compile Include="Assets\Scripts\ShipController.cs" />
+     <Compile Include="Assets\Scripts\ShipUnitTests.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
@@ -119,17 +121,14 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="NSubstitute">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/NSubstitute.dll</HintPath>
- </Reference>
- <Reference Include="nsubstitute">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/nsubstitute.dll</HintPath>
- </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil.Mdb">
  <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ </Reference>
+ <Reference Include="NSubstitute">
+ <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/NSubstitute.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

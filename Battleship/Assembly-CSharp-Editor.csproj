@@ -45,7 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\Tests\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Editor\AssertionComponentEditor.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Editor\AssertionExplorerWindow.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Editor\AssertionListRenderer.cs" />
@@ -66,7 +66,6 @@
      <Compile Include="Assets\UnityTestTools\Common\Editor\Styles.cs" />
      <Compile Include="Assets\UnityTestTools\Common\Editor\TestFilterSettings.cs" />
      <Compile Include="Assets\UnityTestTools\Examples\UnitTestExamples\Editor\SampleTests.cs" />
-     <Compile Include="Assets\UnityTestTools\Examples\UnitTestExamples\Editor\UnitTests.cs" />
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\Editor\Batch.cs" />
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\Editor\EditorReferencesUtil.cs" />
      <Compile Include="Assets\UnityTestTools\IntegrationTestsFramework\TestRunner\Editor\GuiHelper.cs" />
@@ -134,8 +133,11 @@
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
- <Reference Include="NSubstitute">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/NSubstitute.dll</HintPath>
+ <Reference Include="Mono.Cecil">
+ <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.Cecil.Mdb">
+ <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -149,14 +151,8 @@
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="nsubstitute">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/nsubstitute.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil.Mdb">
- <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/UnityTestTools/IntegrationTestsFramework/Libs/Mono.Cecil.Mdb.dll</HintPath>
+ <Reference Include="NSubstitute">
+ <HintPath>/Users/jrbyam/Documents/CS372Battleship/Battleship/Assets/NSubstitute.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
