@@ -1,21 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GridSquare.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SetupPlayerController.cs">
     <Files>
+      <File FileName="Assets/Scripts/Main.cs" Line="14" Column="3" />
       <File FileName="Assets/Scripts/GridGenerator.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ButtonController.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GridSquare.cs" Line="26" Column="6" />
+      <File FileName="Assets/Scripts/GridSquare.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ShipController.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ShipUnitTests.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GridSquareUnitTests.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SetupPlayerController.cs" Line="10" Column="120" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="Battleship" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -46,3 +46,7 @@ I got the tests back to where they were last night using the integration testing
 February 25th, 2016:
 TDD has grown on me a little. I spent about 45 minutes earlier today and completed the TDD process for 10 tests, resulting in the implementation of 5 features.
 This evening I spent an hour and a half or so adding the beginnings of a grid, complete with highlighting when touched.
+
+March 3, 2016:
+Today I spent a little over an hour working on menu UI. Nothing too exciting. I also imported some really nice 3D models of warships. We'll see where we go
+next.
