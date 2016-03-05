@@ -100,7 +100,7 @@ public class ShipUnitTests : MonoBehaviour {
 		// Arrange
 		ShipController temp = Substitute.For <ShipController> ();
 		temp.size = 2;
-		temp.name = "Destroyer";
+		temp.shipName = "Destroyer";
 
 		// Act
 		legalName1 = temp.isNameLegal ();
@@ -114,7 +114,7 @@ public class ShipUnitTests : MonoBehaviour {
 		// Arrange
 		ShipController temp = Substitute.For <ShipController> ();
 		temp.size = 3;
-		temp.name = "Submarine";
+		temp.shipName = "Submarine";
 
 		// Act
 		legalName2 = temp.isNameLegal ();
@@ -128,7 +128,7 @@ public class ShipUnitTests : MonoBehaviour {
 		// Arrange
 		ShipController temp = Substitute.For <ShipController> ();
 		temp.size = 4;
-		temp.name = "Carrier";
+		temp.shipName = "Carrier";
 
 		// Act
 		legalName3 = temp.isNameLegal ();
@@ -142,7 +142,7 @@ public class ShipUnitTests : MonoBehaviour {
 		// Arrange
 		ShipController temp = Substitute.For <ShipController> ();
 		temp.size = 5;
-		temp.name = "Carrier";
+		temp.shipName = "Carrier";
 
 		// Act
 		legalName4 = temp.isNameLegal ();

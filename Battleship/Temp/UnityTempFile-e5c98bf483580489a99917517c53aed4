@@ -100,6 +100,7 @@
 'Assets/Scripts/GridSquare.cs'
 'Assets/Scripts/GridSquareUnitTests.cs'
 'Assets/Scripts/Main.cs'
+'Assets/Scripts/SetupPlayerController.cs'
 'Assets/Scripts/ShipController.cs'
 'Assets/Scripts/ShipUnitTests.cs'
 'Assets/UnityTestTools/Assertions/AssertionComponent.cs'

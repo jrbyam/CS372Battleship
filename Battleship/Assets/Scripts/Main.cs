@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Main : MonoBehaviour {
 
+	public static bool shipIsMoving = false;
+
 	// Use this for initialization
 	void Start () {
 		if (!PlayerPrefs.HasKey ("Player1Name")) {
