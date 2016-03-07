@@ -3,6 +3,8 @@ using System.Collections;
 
 public class GridGenerator : MonoBehaviour {
 
+	public bool inGame;
+
 	// Use this for initialization
 	void Start () {
 		assignGridSquares ();
@@ -21,6 +23,11 @@ public class GridGenerator : MonoBehaviour {
 				square.column = j;
 				// Position each square above the water
 				square.gameObject.transform.position = new Vector3 (square.gameObject.transform.position.x, 1, square.gameObject.transform.position.z);
+				// Differentiate between GridSquare's in game and GridSquare's for ship placement
+				if (inGame)
+					square.inGame = true;
+				else
+					square.inGame = false;
 			}
 		}
 	}

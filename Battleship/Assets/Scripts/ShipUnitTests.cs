@@ -54,7 +54,7 @@ public class ShipUnitTests : MonoBehaviour {
 		square.column = 1;
 
 		// Act
-		temp.placeShip (square, true); // Place ship vertically starting at 1, 1 (valid)
+		//temp.placeShip (square, true); // Place ship vertically starting at 1, 1 (valid)
 		legallyPlaced1 = temp.isPlacedLegally ();
 
 		// Assert
@@ -71,7 +71,7 @@ public class ShipUnitTests : MonoBehaviour {
 		square.column = 10;
 
 		// Act
-		temp.placeShip (square, false); // Place ship horizontally starting at 1, 10 (invalid)
+		//temp.placeShip (square, false); // Place ship horizontally starting at 1, 10 (invalid)
 		legallyPlaced2 = temp.isPlacedLegally ();
 
 		// Assert
@@ -88,7 +88,7 @@ public class ShipUnitTests : MonoBehaviour {
 		square.column = 1;
 
 		// Act
-		temp.placeShip (square, true); // Place ship vertically starting at 10, 1 (invalid)
+		//temp.placeShip (square, true); // Place ship vertically starting at 10, 1 (invalid)
 		legallyPlaced3 = temp.isPlacedLegally ();
 
 		// Assert

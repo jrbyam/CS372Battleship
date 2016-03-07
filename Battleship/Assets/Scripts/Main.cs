@@ -4,6 +4,7 @@ using System.Collections;
 public class Main : MonoBehaviour {
 
 	public static bool shipIsMoving = false;
+	public static ShipController movingShip;
 
 	// Use this for initialization
 	void Start () {
