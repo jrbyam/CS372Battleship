@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\GridSquare.cs" />
      <Compile Include="Assets\Scripts\GridSquareUnitTests.cs" />
      <Compile Include="Assets\Scripts\Main.cs" />
+     <Compile Include="Assets\Scripts\PlayerFireController.cs" />
+     <Compile Include="Assets\Scripts\PlayerPlacementController.cs" />
      <Compile Include="Assets\Scripts\SetupPlayerController.cs" />
      <Compile Include="Assets\Scripts\ShipController.cs" />
      <Compile Include="Assets\Scripts\ShipUnitTests.cs" />
