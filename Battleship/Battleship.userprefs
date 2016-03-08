@@ -1,14 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShipController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerFireController.cs">
     <Files>
-      <File FileName="Assets/Scripts/Main.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GridGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GridSquare.cs" Line="42" Column="70" />
+      <File FileName="Assets/Scripts/Main.cs" Line="10" Column="79" />
+      <File FileName="Assets/Scripts/GridSquare.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ShipController.cs" Line="329" Column="62" />
       <File FileName="Assets/Scripts/ShipUnitTests.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GridSquareUnitTests.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/SetupPlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerPlacementController.cs" Line="14" Column="4" />
+      <File FileName="Assets/Scripts/ButtonController.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/PlayerFireController.cs" Line="10" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -50,3 +50,15 @@ This evening I spent an hour and a half or so adding the beginnings of a grid, c
 March 3, 2016:
 Today I spent a little over an hour working on menu UI. Nothing too exciting. I also imported some really nice 3D models of warships. We'll see where we go
 next.
+
+March 6, 2016:
+3 and a half hours of solid coding today brought me to a place where I can say (with relative confidence) that the ship placing logic is all hashed out. I'm 
+using mobile touch-input. One finger moves a ship after it's been "grabbed" and another can be used to change the angle (and therefore orientation) of the
+ship. The grid squares to which the ship will snap at any given position/orientation (if the finger is lifted) are now displayed using highlighting. I'm quite
+proud of it, I must say. I also must say that I did not follow TDD for this coding session. I felt much freer to problem-solve without conceding to the 
+obligation of writing tests first. I have come to the firm conclusion that I do not like TDD very much at all.
+
+March 7, 2016:
+I spent an hour or so cleaning up my code from yesterday and adding in the American versions of the already-included Russian ship models. It looks dang good.
+
+
