@@ -1,0 +1,22 @@
+Battleship:
+This Battleship game purely touch game (note: game won’t work for non-touch devices) 
+It’s capable of a two player game where the players hand the device between each other. (no peeking)
+
+As soon as the game launches you are presented with a start button. Once the start button is pressed
+the user then has the option for ether one or two player game. 
+
+	•	If the one player game is chosen (player vs computer), then a new screen will 
+		appear with a text box for the player to type his or her name in. Once the name has been entered.
+		The game asks the player to place his or her ships on the board. The ships can be pinched and 
+		rotated with one’s fingers. After all the game pieces have been placed on the board the game begins. 
+
+	•	If the two player game is chosen (player vs player). then a new screen will appear with a text box
+		for the player1 to type his or her name in. After player1 finishes typing their name they hit done.
+		A new scree then appears an asks player2 to type their name. once player2 finishes typing their name
+		and hits done. The game then asks player1 (or whatever name typed) to place his or her ships on the board.
+		Once finished the player1 then hits done. Then the game asks player2 (or whatever name typed)
+		to place his or her ships on the board.  As soon as player2 finished they hit done. 
+		The game is now started and the game displays a message prompt asking for player1 to make their	first move.
+
+Once the game is finished, it declares a winner along with fireworks. To end the fireworks,
+tap anywhere on the screen. Were your once again presented with a start button.

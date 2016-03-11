@@ -1,0 +1,52 @@
+February 8, 2016
+Today me and Jay discussed what we want to use for our project. That is what testing framework and programming language we want to write it in.
+I think we’re going with C# and using the Unity engine should be interesting. Because turns out Unity has a built-in testing framework.
+
+February 10, 2016
+Jay said he emailed Chappell about using the Unity engine, looks like everything’s a go.
+
+
+February 12, 2016:
+We did user stories today as well as briefly went over the specs/design aspects of the project.
+
+
+February 15, 2016:
+Meetup with Jay at the artic java, I'm still a little unsure about Unity the learning curve seems kind of steep I hope I'll be able to help. 
+tried to get the testing framework to work on windows but it’s a pain to configure right. Been working on the testing framework Nsubstitute for
+a while now and still no luck getting it to work.
+
+February 17, 2016
+Did some pair programming in class today, never experienced this it was interesting. I don’t really like typing with someone watching over my shoulders perhaps I should
+let Jay do the coding. tried to work on the project a little tonight but mono doesn’t want to compile things...I don’t know what I'm doing wrong
+
+
+February 19, 2016
+So me and Jay spent all of the class pair programming time trying to get NSubstitute to work. But no luck( found out Unity doesn’t exist on Linux this is going to be fun )
+
+February 18, 2016
+Didn’t work on much this week I feel like I’m wanting to procrastinate more and more on this project. Jay is thinking about trying a different approach the NSubstitute testing framework.
+
+
+February 24, 2016
+Spent the pair programming time trying to get the unit testing to work. Seems ease to use, but it just doesn’t seem to be working. where doing what the documentation says
+but still to no avail. I can’t even get the thing configured right on my windows box.
+
+February 26, 2016
+Have to present on our project today and It looks like Jay has made some substantial progress. I’m impressed with the work he’s done so far.
+
+
+March 3, 2016
+Gerrr I don’t think I'm using git right!!
+
+March 4, 2016
+me and Jay meet up at the java again and some progress has been made. But I don’t know I feel like i haven’t done much of anything on this project.
+I need to try to pull more my own weight.
+
+
+March 11, 2016
+me and Jay meet up at the java again this is the last weekend to get the project done. Hopefully I could get the computer AI working. 
+though its proven harder than I thought. Because everything’s touch its harder to test as I don’t know if the things I’m producing work or not.
+
+March 17, 2016
+night before and the AI still not working properly. I don’t feel right pushing broken code so I think I’m going to hold off.
+
