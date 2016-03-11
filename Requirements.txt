@@ -1,6 +1,11 @@
 Requirements.txt
-Here lie the requirements of the CS 372 Battleship Project as decided by James Lang and Jay Byam.
+Here lie the requirements of the CS 372 Battleship Project as decided by James Lang and Jay Byam, but first the description and scope.
 
+Description and Scope:
+This project is intended to create a fully playable and winnable game of Battleship on a mobile device using touch input. We plan to achieve this using the 
+Unity game engine while coding in C#.
+
+Requirements:
 1. The software must allow at least one human to successfully play a game of Battleship, per the usual rules of the game.
 2. There must be a single winner at the end of any given game.
 3. The software must run on a mobile device.
