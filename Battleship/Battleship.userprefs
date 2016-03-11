@@ -1,11 +1,6 @@
-﻿<Properties StartupItem="Battleship.CSharp.Plugins.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ShipUnitTests.cs">
-    <Files>
-      <File FileName="Assets/Scripts/ShipUnitTests.cs" Line="98" Column="130" />
-      <File FileName="Assets/Scripts/ShipController.cs" Line="350" Column="4" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

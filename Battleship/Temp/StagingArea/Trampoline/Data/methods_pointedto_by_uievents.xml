@@ -1,0 +1,19 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ButtonController">
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="setPlayer1Name"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="setPlayer2Name"/>
+			<method name="nextScene"/>
+			<method name="savePlayer1Ships"/>
+			<method name="nextScene"/>
+			<method name="savePlayer2Ships"/>
+			<method name="nextScene"/>
+		</type>
+	</assembly>
+</linker>
