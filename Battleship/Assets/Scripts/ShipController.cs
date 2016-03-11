@@ -346,9 +346,7 @@ public class ShipController : MonoBehaviour {
 
 	public bool isPlacedLegally () {
 		foreach (GridSquare square in gridSquares) {
-			if (square.row < 1 || square.row > 10 || square.column < 1 || square.column > 10 || square.occupied) {
-				return false;
-			}
+			if (!square.isPlacedLegally ()) return false;
 		}
 		return true;
 	}

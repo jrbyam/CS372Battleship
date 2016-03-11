@@ -47,15 +47,16 @@ public class ShipUnitTests : MonoBehaviour {
 
 	private void TestPlacementLegality1 () {
 		// Arrange
-		ShipController temp = Substitute.For <ShipController> ();
-		temp.size = 3;
-		GridSquare square = Substitute.For <GridSquare> ();
-		square.row = 1;
-		square.column = 1;
+		GameObject ship = Substitute.For <GameObject> ();
+		ship.transform.eulerAngles = Vector3.zero;
+		ShipController shipController = ship.AddComponent<ShipController> ();
+		shipController.size = 3;
+		shipController.shipName = "Submarine";
 
 		// Act
-		//temp.placeShip (square, true); // Place ship vertically starting at 1, 1 (valid)
-		legallyPlaced1 = temp.isPlacedLegally ();
+		shipController.placeShip (new Vector3 (-200, 1, 150)); // Place ship off grid to top left corner
+		// Ship is placed correctly if all GridSquare's are legal and the anchor is on the second row, first column
+		legallyPlaced1 = shipController.isPlacedLegally () && (shipController.gridSquares[0].row == 2 && shipController.gridSquares[0].column == 1);
 
 		// Assert
 		var generalComparer = AssertionComponent.Create<GeneralComparer> (CheckMethod.Update, gameObject, "ShipUnitTests.legallyPlaced1", true);
@@ -64,35 +65,37 @@ public class ShipUnitTests : MonoBehaviour {
 
 	private void TestPlacementLegality2 () {
 		// Arrange
-		ShipController temp = Substitute.For <ShipController> ();
-		temp.size = 3;
-		GridSquare square = Substitute.For <GridSquare> ();
-		square.row = 1;
-		square.column = 10;
+		GameObject ship = Substitute.For <GameObject> ();
+		ship.transform.eulerAngles = new Vector3 (0, 90, 0);
+		ShipController shipController = ship.AddComponent<ShipController> ();
+		shipController.size = 5;
+		shipController.shipName = "Carrier";
 
 		// Act
-		//temp.placeShip (square, false); // Place ship horizontally starting at 1, 10 (invalid)
-		legallyPlaced2 = temp.isPlacedLegally ();
+		shipController.placeShip (new Vector3 (-200, 1, -210)); // Place ship off grid to bottom left corner
+		// Ship is placed correctly if all GridSquare's are legal and the anchor is on the tenth row, third column
+		legallyPlaced2 = shipController.isPlacedLegally () && (shipController.gridSquares[0].row == 10 && shipController.gridSquares[0].column == 3);
 
 		// Assert
-		var generalComparer = AssertionComponent.Create<GeneralComparer> (CheckMethod.Update, gameObject, "ShipUnitTests.legallyPlaced2", false);
+		var generalComparer = AssertionComponent.Create<GeneralComparer> (CheckMethod.Update, gameObject, "ShipUnitTests.legallyPlaced2", true);
 		generalComparer.compareType = GeneralComparer.CompareType.AEqualsB;
 	}
 
 	private void TestPlacementLegality3 () {
 		// Arrange
-		ShipController temp = Substitute.For <ShipController> ();
-		temp.size = 3;
-		GridSquare square = Substitute.For <GridSquare> ();
-		square.row = 10;
-		square.column = 1;
+		GameObject ship = Substitute.For <GameObject> ();
+		ship.transform.eulerAngles = Vector3.zero;
+		ShipController shipController = ship.AddComponent<ShipController> ();
+		shipController.size = 3;
+		shipController.shipName = "Cruiser";
 
 		// Act
-		//temp.placeShip (square, true); // Place ship vertically starting at 10, 1 (invalid)
-		legallyPlaced3 = temp.isPlacedLegally ();
+		shipController.placeShip (new Vector3 (-18, 1, -20)); // Place ship in middle of grid
+		// Ship is placed correctly if all GridSquare's are legal and the anchor is on the fifth row, fifth column
+		legallyPlaced3 = shipController.isPlacedLegally () && (shipController.gridSquares[0].row == 5 && shipController.gridSquares[0].column == 5);
 
 		// Assert
-		var generalComparer = AssertionComponent.Create<GeneralComparer> (CheckMethod.Update, gameObject, "ShipUnitTests.legallyPlaced3", false);
+		var generalComparer = AssertionComponent.Create<GeneralComparer> (CheckMethod.Update, gameObject, "ShipUnitTests.legallyPlaced3", true);
 		generalComparer.compareType = GeneralComparer.CompareType.AEqualsB;
 	}
 
