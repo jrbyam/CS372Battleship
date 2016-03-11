@@ -47,18 +47,26 @@ February 25th, 2016:
 TDD has grown on me a little. I spent about 45 minutes earlier today and completed the TDD process for 10 tests, resulting in the implementation of 5 features.
 This evening I spent an hour and a half or so adding the beginnings of a grid, complete with highlighting when touched.
 
-March 3, 2016:
+March 3rd, 2016:
 Today I spent a little over an hour working on menu UI. Nothing too exciting. I also imported some really nice 3D models of warships. We'll see where we go
 next.
 
-March 6, 2016:
+March 6th, 2016:
 3 and a half hours of solid coding today brought me to a place where I can say (with relative confidence) that the ship placing logic is all hashed out. I'm 
 using mobile touch-input. One finger moves a ship after it's been "grabbed" and another can be used to change the angle (and therefore orientation) of the
 ship. The grid squares to which the ship will snap at any given position/orientation (if the finger is lifted) are now displayed using highlighting. I'm quite
 proud of it, I must say. I also must say that I did not follow TDD for this coding session. I felt much freer to problem-solve without conceding to the 
 obligation of writing tests first. I have come to the firm conclusion that I do not like TDD very much at all.
 
-March 7, 2016:
+March 7th, 2016:
 I spent an hour or so cleaning up my code from yesterday and adding in the American versions of the already-included Russian ship models. It looks dang good.
 
+March 10th, 2016:
+I binge coded today, about the same amount of time I spent on Sunday (the 6th). The game is now winnable, which is good, but it is also beautiful, which is 
+even better. I added animations for both hits and misses and have the ships show on fire if they have been sunk. The game ends when either player has sunk all
+of the opponents ships and a scene with the winner's name and fireworks appears. I'm pretty proud of it.
+I did break a few tests, though, becasue I restructured how I'm handling ship placement. I'll need to fix that before noon tomorrow.
 
+March 11th, 2016:
+I spent about an hour just now fixing the tests (they pass again), cleaning and commenting the code and doing one last test run on the device. James added some
+sweet sounds and did the User Documentation for us so I beleive we are good to go. This was fun. I very much enjoyed this project.
