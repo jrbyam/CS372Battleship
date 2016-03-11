@@ -12,6 +12,7 @@ public class ShipController : MonoBehaviour {
 	private Plane plane = new Plane(Vector3.up, -1);
 	private float distance;
 	private string facingDirection;
+	private Vector3 startingPosition;
 
 	// Constructors
 	public ShipController () {
@@ -23,6 +24,10 @@ public class ShipController : MonoBehaviour {
 		size = shipSize;
 		gridSquares = new List<GridSquare> ();
 		this.shipName = shipName;
+	}
+
+	void Start () {
+		startingPosition = transform.position;
 	}
 
 	// Update is called once per frame
@@ -305,33 +310,43 @@ public class ShipController : MonoBehaviour {
 	}
 
 	public void placeShip (Vector3 rawPosition) {
+		bool spotTaken = false;
 		Vector3 anchorGridSquarePosition = getLegalPosition (rawPosition);
 		// Add the GridSquare's based on the type and orientation of the ship
 		GridSquare anchorGridSquare = GameObject.Find ((10 - ((anchorGridSquarePosition.z + 200) / 36)) + " " + (((anchorGridSquarePosition.x + 162) / 36) + 1)).GetComponent<GridSquare> ();
-		gridSquares = getLegalGridSquares (anchorGridSquare);
-		foreach (GridSquare square in gridSquares) {
-			square.occupied = true;
+		List<GridSquare> possibleGridSquares = getLegalGridSquares (anchorGridSquare);
+		foreach (GridSquare square in possibleGridSquares) {
+			if (square.occupied) spotTaken = true;
 		}
-		// Set the ship's position to that of the (possibly new) anchor GridSquare
-		GameObject possiblyNewAnchor = GameObject.Find (gridSquares[0].row + " " + gridSquares[0].column);
-		transform.position = new Vector3 (possiblyNewAnchor.transform.position.x, transform.position.y, possiblyNewAnchor.transform.position.z);
-		// Set the ship's orientation
-		float rotationAboutY;
-		if (facingDirection == "North") {
-			rotationAboutY = 0;
-		} else if (facingDirection == "West") {
-			rotationAboutY = 90;
-		} else if (facingDirection == "South") {
-			rotationAboutY = 180;
+		if (!spotTaken) {
+			gridSquares = possibleGridSquares;
+			foreach (GridSquare square in gridSquares) {
+				square.occupied = true;
+			}
+			// Set the ship's position to that of the (possibly new) anchor GridSquare
+			GameObject possiblyNewAnchor = GameObject.Find (gridSquares [0].row + " " + gridSquares [0].column);
+			transform.position = new Vector3 (possiblyNewAnchor.transform.position.x, transform.position.y, possiblyNewAnchor.transform.position.z);
+			// Set the ship's orientation
+			float rotationAboutY;
+			if (facingDirection == "North") {
+				rotationAboutY = 0;
+			} else if (facingDirection == "West") {
+				rotationAboutY = 90;
+			} else if (facingDirection == "South") {
+				rotationAboutY = 180;
+			} else {
+				rotationAboutY = 270;
+			}
+			transform.eulerAngles = new Vector3 (0, rotationAboutY, 0);
 		} else {
-			rotationAboutY = 270;
+			transform.position = startingPosition;
+			transform.eulerAngles = Vector3.zero;
 		}
-		transform.eulerAngles = new Vector3 (0, rotationAboutY, 0);
 	}
 
 	public bool isPlacedLegally () {
 		foreach (GridSquare square in gridSquares) {
-			if (square.row < 1 || square.row > 10 || square.column < 1 || square.column > 10) {
+			if (square.row < 1 || square.row > 10 || square.column < 1 || square.column > 10 || square.occupied) {
 				return false;
 			}
 		}

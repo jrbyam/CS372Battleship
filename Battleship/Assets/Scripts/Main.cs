@@ -8,6 +8,9 @@ public class Main : MonoBehaviour {
 	public static ShipController movingShip;
 	public static List<ShipController> player1Ships = new List<ShipController> ();
 	public static List<ShipController> player2Ships = new List<ShipController> ();
+	public static List<GridSquare> player1Misses = new List<GridSquare> ();
+	public static List<GridSquare> player2Misses = new List<GridSquare> ();
+	public static string winner;
 
 	// Use this for initialization
 	void Start () {

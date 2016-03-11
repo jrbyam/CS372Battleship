@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class GridGenerator : MonoBehaviour {
@@ -24,10 +25,48 @@ public class GridGenerator : MonoBehaviour {
 				// Position each square above the water
 				square.gameObject.transform.position = new Vector3 (square.gameObject.transform.position.x, 1, square.gameObject.transform.position.z);
 				// Differentiate between GridSquare's in game and GridSquare's for ship placement
-				if (inGame)
+				if (inGame) {
 					square.inGame = true;
-				else
+					if (SceneManager.GetActiveScene ().name == "Player1Fire") {
+						foreach (ShipController ship in Main.player2Ships) {
+							ship.updateSunk ();
+							if (ship.sunk) {
+								GameObject.Find ("American " + ship.shipName).transform.position = GameObject.Find (ship.gridSquares [0].row + " " + ship.gridSquares [0].column).transform.position;
+							}
+							foreach (GridSquare shipSquare in ship.gridSquares) {
+								if (shipSquare.row == square.row && shipSquare.column == square.column) {
+									square.occupied = true;
+									square.hit = shipSquare.hit;
+								}
+							}
+						}
+						foreach (GridSquare missedShot in Main.player1Misses) {
+							if (missedShot.row == square.row && missedShot.column == square.column) {
+								square.hit = true;
+							}
+						}
+					} else {
+						foreach (ShipController ship in Main.player1Ships) {
+							ship.updateSunk ();
+							if (ship.sunk) {
+								GameObject.Find ("Russian " + ship.shipName).transform.position = GameObject.Find (ship.gridSquares [0].row + " " + ship.gridSquares [0].column).transform.position;
+							}
+							foreach (GridSquare shipSquare in ship.gridSquares) {
+								if (shipSquare.row == square.row && shipSquare.column == square.column) {
+									square.occupied = true;
+									square.hit = shipSquare.hit;
+								}
+							}
+						}
+						foreach (GridSquare missedShot in Main.player2Misses) {
+							if (missedShot.row == square.row && missedShot.column == square.column) {
+								square.hit = true;
+							}
+						}
+					}
+				} else {
 					square.inGame = false;
+				}
 			}
 		}
 	}
