@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/Player1Fire.unity
+- path: Assets/_Scenes/DecidePlayers.unity
   isLoaded: 1
   isActive: 1
