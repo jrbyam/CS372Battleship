@@ -11,7 +11,7 @@ public class ShipController : MonoBehaviour {
 	private bool followFinger = false;
 	private Plane plane = new Plane(Vector3.up, -1);
 	private float distance;
-	private string facingDirection;
+	public string facingDirection;
 	private Vector3 startingPosition;
 
 	// Constructors
@@ -32,34 +32,34 @@ public class ShipController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (GameObject.Find ("Grid Generator").GetComponent<GridGenerator> ().inGame) {
-			updateSunk ();
-		} else {
-			if (Input.touchCount > 0) {
-				if (Input.touches [0].phase == TouchPhase.Began) {
+		if (GameObject.Find ("Grid Generator").GetComponent<GridGenerator> ().inGame) { // If in game...
+			updateSunk (); // just check if sunk.
+		} else { // Otherwise...
+			if (Input.touchCount > 0) {  // handle touches.
+				if (Input.touches [0].phase == TouchPhase.Began) {  // New touch
 					Ray ray = Camera.main.ScreenPointToRay (Input.touches[0].position);
 					if (plane.Raycast (ray, out distance)) {
-						if (!followFinger && !Main.shipIsMoving && GetComponent<BoxCollider> ().bounds.Contains (ray.GetPoint (distance))) {
+						if (!followFinger && !Main.shipIsMoving && GetComponent<BoxCollider> ().bounds.Contains (ray.GetPoint (distance))) { // Touch is on this ship (grab)
 							followFinger = true;
-							Main.shipIsMoving = true;
+							Main.shipIsMoving = true; // Lock down ship movement to this ship
 							Main.movingShip = this;
 						}
 					}
 				}
-				if ((Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled) && Main.movingShip == this) {
+				if ((Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled) && Main.movingShip == this) { // This ship has been placed (lifted finger)
 					followFinger = false;
-					Main.shipIsMoving = false;
+					Main.shipIsMoving = false; // Release ship movement
 					Main.movingShip = null;
-					placeShip (transform.position);
+					placeShip (transform.position); // Place ship
 				}
-				if (followFinger && Main.shipIsMoving == this && Input.touchCount > 1) {
+				if (followFinger && Main.shipIsMoving == this && Input.touchCount > 1) { // Handle additional touch (for rotation)
 					Ray ray = Camera.main.ScreenPointToRay (Input.touches[1].position);
 					if (plane.Raycast (ray, out distance)) {
-						transform.LookAt (ray.GetPoint (distance));
+						transform.LookAt (ray.GetPoint (distance)); // Face the ship toward the additional finger
 					}
 				}
 			}
-			if (followFinger) {
+			if (followFinger) { // Update position if this ship is being moved by a touch
 				Ray ray = Camera.main.ScreenPointToRay (Input.touches[0].position);
 				if (plane.Raycast (ray, out distance)) {
 					if (shipName == "Submarine") {
@@ -338,7 +338,7 @@ public class ShipController : MonoBehaviour {
 				rotationAboutY = 270;
 			}
 			transform.eulerAngles = new Vector3 (0, rotationAboutY, 0);
-		} else {
+		} else { // If spot taken just put ship back where it started (off grid)
 			transform.position = startingPosition;
 			transform.eulerAngles = Vector3.zero;
 		}

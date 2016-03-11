@@ -14,11 +14,6 @@ public class PlayerPlacementController : MonoBehaviour {
 		}
 		StartCoroutine (RemoveMessagePanel ());
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	private IEnumerator RemoveMessagePanel () {
 		yield return new WaitForSeconds (3);

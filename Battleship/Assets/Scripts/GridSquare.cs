@@ -13,12 +13,12 @@ public class GridSquare : MonoBehaviour {
 	private Plane plane = new Plane(Vector3.up, -1);
 	private float distance;
 
+	// Constructors
 	public GridSquare() {
 		row = 0;
 		column = 0;
 		occupied = false;
 	}
-
 	public GridSquare(int row, int column) {
 		this.row = row;
 		this.column = column;
@@ -40,7 +40,7 @@ public class GridSquare : MonoBehaviour {
 				} else {
 					if (plane.Raycast (ray, out distance)) {
 						if (GetComponent<BoxCollider> ().bounds.Contains (ray.GetPoint (distance))) { // Press ended over this square (Shot fired!)
-							if (occupied) {
+							if (occupied) { // If this is a GridSquare of one of the ships
 								GameObject explosion = Instantiate (GameObject.Find ("Explosion"));
 								explosion.transform.position = transform.position;
 								StartCoroutine (DestroyExplosion (explosion));
@@ -63,7 +63,7 @@ public class GridSquare : MonoBehaviour {
 										}
 									}
 								}
-							} else {
+							} else { // A missed shot
 								if (SceneManager.GetActiveScene ().name == "Player1Fire") {
 									Main.player1Misses.Add (this);
 								} else {

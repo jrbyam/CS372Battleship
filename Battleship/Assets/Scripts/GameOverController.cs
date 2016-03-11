@@ -8,6 +8,7 @@ public class GameOverController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Place winners name on screen
 		GameObject.Find ("Winner Name").GetComponent<Text> ().text = Main.winner;
 		StartCoroutine (BackToMain ()); // If no touch
 		// Reset static variables
@@ -19,10 +20,11 @@ public class GameOverController : MonoBehaviour {
 
 	void Update () {
 		if (Input.touchCount > 0) {
-			SceneManager.LoadScene ("Main");
+			SceneManager.LoadScene ("Main"); // Back to main on touch
 		}
 	}
-	
+
+	// Timeout set to 10 seconds if no touch is inputted
 	private IEnumerator BackToMain () {
 		yield return new WaitForSeconds (10);
 		SceneManager.LoadScene ("Main");

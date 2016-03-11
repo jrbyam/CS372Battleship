@@ -28,6 +28,7 @@ public class PlayerFireController : MonoBehaviour {
 		}
 	}
 
+	// Switch turns or display GameOver if either player has sunk all of the other's ships
 	private IEnumerator SwitchTurns () {
 		yield return new WaitForSeconds (2);
 		if (SceneManager.GetActiveScene ().name == "Player1Fire") {
